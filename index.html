@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>E-Duka</title>
+    <script
+      src="https://kit.fontawesome.com/7e15f6608d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7b4UcdINnfJj-hA7YzBosFs3oGfFH9qbgt0WJ8cd2CcBHTzTSJq7RehgZ0sOjuzddzE&usqp=CAU" alt="">
+                    </div>
+        <form action="" class="search-form">
+          <input
+            type="text"
+            placeholder="Search products, brands and category"
+          />
+          <button class="search-button"><strong>SEARCH</strong></button>
+        </form>
+          <!-- </div> -->
+          <nav>
+            <ul id="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#list-products">Products</a></li>
+              <li><a href="#">About</a></li>
+              <i class="fas fa-chevron-down"></i>
+              <li><a href="#">Contact</a></li>
+              <i class="fas fa-chevron-down"></i>
+              <img
+                src="images/cart.png.png"
+                alt=""
+                width="30px"
+                height="30px"
+                onclick="toggleCart()"
+              />
+            </ul>
+          </nav>
+          <div id="cart" class="hidden">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: <span id="total-amount">0</span></p>
+            <button id="clear-cart-button" onclick="clearCart()">
+              Clear Cart
+            </button>
+          </div>
+          <img class="menu-icon" src="images/menu.pg" onclick="menutoggle()" />
+        </div>
+    </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>All You need is a click away</h1>
+            <p>
+Quality is our middle name</p>
+            <a href="#list-products" class="btn">Products</a>
+          </div>
+
+          <div class="col-2">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title">Our Products</h2>
+
+    <div class="products-container" id="list-products">
+      <div class="filter row-2">
+        
+        <select id="categorySelect">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+      <!-- <div class="category-icon products-container" id="list-products" >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div> -->
+
+      <div class="products">
+        <div class="product"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
